@@ -3,91 +3,456 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NextGen Robotics</title>
+<title>NextGen Robotics | Robotics • AI • IoT</title>
+
 <style>
-body{
-font-family:Arial,sans-serif;
+
+*{
 margin:0;
 padding:0;
-background:#0f172a;
-color:white;
-text-align:center;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
 }
+
+body{
+background:#08111f;
+color:#fff;
+line-height:1.6;
+}
+
 header{
-padding:80px 20px;
-background:#1e293b;
+background:#0b1728;
+padding:15px 5%;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.5);
 }
-h1{
-font-size:48px;
-margin-bottom:10px;
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
-.btn{
-display:inline-block;
-padding:12px 25px;
-background:#22c55e;
+
+.logo{
+font-size:30px;
+font-weight:bold;
+color:#00d4ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
 color:white;
 text-decoration:none;
-border-radius:5px;
-margin-top:20px;
+font-weight:500;
 }
-section{
-padding:50px 20px;
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
-.card{
-background:#1e293b;
-padding:25px;
-margin:15px;
-border-radius:10px;
-display:inline-block;
-width:250px;
-}
-footer{
-background:#020617;
+
+.hero-content{
+max-width:900px;
 padding:20px;
 }
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero span{
+color:#00d4ff;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+background:#00d4ff;
+color:black;
+padding:12px 30px;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#00d4ff;
+}
+
+.about{
+text-align:center;
+max-width:1000px;
+margin:auto;
+font-size:18px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#102039;
+border-radius:15px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#00d4ff;
+}
+
+.tech-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.tech-box{
+background:#102039;
+padding:20px;
+border-radius:12px;
+}
+
+.tech-box h4{
+margin-bottom:12px;
+color:#00d4ff;
+}
+
+.contact{
+background:#0f1728;
+text-align:center;
+}
+
+.contact p{
+margin:12px 0;
+font-size:18px;
+}
+
+footer{
+background:#050b14;
+padding:20px;
+text-align:center;
+color:#ccc;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:10px;
+}
+
+}
+
 </style>
+
 </head>
+
 <body>
 
 <header>
-<h1>NextGen Robotics</h1>
-<p>Robotics • Automation • AI Solutions</p>
-<a class="btn" href="mailto:info@nextgenrobotics.technology">Contact Us</a>
+
+<nav>
+
+<div class="logo">
+NextGen Robotics
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#technology">Technology</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
 </header>
 
-<section>
-<h2>Our Services</h2>
+<section class="hero">
 
-<div class="card">
-<h3>Industrial Robotics</h3>
-<p>Automation and robotics integration services.</p>
-</div>
+<div class="hero-content">
 
-<div class="card">
-<h3>AI & IoT</h3>
-<p>Smart connected industrial solutions.</p>
-</div>
+<h1>
+Future Powered By
+<span>Robotics & AI</span>
+</h1>
 
-<div class="card">
-<h3>Technical Consulting</h3>
-<p>Engineering sales and procurement support.</p>
+<p>
+Robotics • Artificial Intelligence • IoT • Embedded Systems • Industrial Automation
+</p>
+
+<a href="#contact" class="btn">
+Get Started
+</a>
+
 </div>
 
 </section>
 
-<section>
-<h2>Contact Information</h2>
+<section id="about">
 
-<p><strong>Contact:</strong> Inaya</p>
+<h2 class="section-title">
+About NextGen Robotics
+</h2>
+
+<div class="about">
+
+<p>
+NextGen Robotics specializes in Robotics Development,
+AI Integration, IoT Solutions, Smart Automation,
+Embedded Systems and Industrial Innovation.
+We help students, startups and industries build smart,
+connected and intelligent technology solutions.
+</p>
+
+</div>
+
+</section>
+
+<section id="components">
+
+<h2 class="section-title">
+Robotics Components
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Arduino Solutions</h3>
+<p>Arduino UNO, Mega, Nano and embedded controller based projects.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Sensors & Controllers</h3>
+<p>Ultrasonic, IR, motion, temperature and smart sensing technologies.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>ESP32 & IoT</h3>
+<p>WiFi enabled automation and Internet of Things solutions.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">
+Project Showcase
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Human Following Robot</h3>
+<p>AI powered robot capable of tracking and following human movement.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>IoT Home Automation</h3>
+<p>Remote monitoring and app-controlled automation systems.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Robotics Automation</h3>
+<p>Industrial and educational robotics applications and solutions.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1200&q=80">
+<div class="card-content">
+<h3>Industry 4.0 Solutions</h3>
+<p>Smart manufacturing, automation and digital transformation.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="technology">
+
+<h2 class="section-title">
+Tools & Technologies
+</h2>
+
+<div class="tech-grid">
+
+<div class="tech-box">
+<h4>Programming</h4>
+Python<br>
+C/C++<br>
+JavaScript<br>
+Embedded C
+</div>
+
+<div class="tech-box">
+<h4>AI & Machine Learning</h4>
+TensorFlow<br>
+OpenCV<br>
+PyTorch<br>
+Computer Vision
+</div>
+
+<div class="tech-box">
+<h4>Electronics</h4>
+Arduino<br>
+ESP32<br>
+STM32<br>
+Raspberry Pi
+</div>
+
+<div class="tech-box">
+<h4>Industrial Automation</h4>
+PLC<br>
+SCADA<br>
+Industry 4.0<br>
+Automation Systems
+</div>
+
+<div class="tech-box">
+<h4>IoT Platforms</h4>
+Azure IoT<br>
+AWS IoT<br>
+Node-RED<br>
+ThingsBoard
+</div>
+
+<div class="tech-box">
+<h4>Applications</h4>
+Smart Homes<br>
+Smart Factories<br>
+Robotics<br>
+Monitoring Systems
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<p><strong>Company:</strong> NextGen Robotics</p>
+<p><strong>Contact Person:</strong> Inaya</p>
 <p><strong>Phone:</strong> +91 9217414080</p>
 <p><strong>Email:</strong> info@nextgenrobotics.technology</p>
-<p><strong>Address:</strong> Sector 104, Noida, Uttar Pradesh</p>
+<p><strong>Location:</strong> Sector 104, Noida, Uttar Pradesh, India</p>
+
+<a href="mailto:info@nextgenrobotics.technology" class="btn">
+Send Email
+</a>
 
 </section>
 
 <footer>
-© NextGen Robotics. All Rights Reserved.
+
+© 2026 NextGen Robotics | Robotics • AI • IoT • Automation
+
 </footer>
+
+<a class="whatsapp"
+href="https://wa.me/919217414080"
+target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
